@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  text-align: center;
+}
+
+.numberItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 20px; */
+}
+
+.numberItem .name {
+  width: 50vw;
+  text-align: center;
+  margin-right: auto;
+}
+
+.numberItem .number {
+  margin-left: auto;
+  display: flex;
+  width: 50vw;
+}
+
+.numberItem .number h3 {
+  margin-left: 8px;
+}
+.h3{
+  width: 55vw;
+  text-align: center;
+  margin-right: auto;
+}

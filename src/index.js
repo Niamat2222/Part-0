@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css';
+import Reminders from "./component/Reminder.js";
+
 
 const App = () => {
   const phonebook = {
@@ -56,6 +58,7 @@ ReactDOM.render(
 
 
 ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Reminders />, document.getElementById('root'))
 
 
 

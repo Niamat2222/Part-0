@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./Reminder.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -11,17 +11,17 @@ class App extends React.Component {
           timestamp: "2018-11-10T13:00:00.141Z"
         }
       ],
-      newName: 'Buy some eggs'
+      newName: 'Make omelette'
     }
   }
 
   render() {
     return (
       <div>
-        <h2>Reminders</h2>
+        <h2>Add Reminders</h2>
       <form>
         <div>
-            Name: <input />
+            Name: <input/>
         </div>
 
         <div>
@@ -29,11 +29,30 @@ class App extends React.Component {
         </div>
       </form>
 
-          <h2>At time:</h2>
+          <h2>Reminders</h2>
+          <p>Buy some eggs</p>
+          <p>Make omelette</p>
 
         <div>
-          debug: {this.state.newName}
+          Debug: {this.state.newName}
         </div>  
+        
+        <div>
+      <form>
+        <div>
+            Name: <input />
+        </div>
+
+        <div>
+            Date: <input />
+        </div>
+
+        <div>
+            <button type="submit">Add</button>
+        </div>
+      </form>
+      
+        </div>
       </div>
     )
   }
